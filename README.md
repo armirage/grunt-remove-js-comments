@@ -24,7 +24,7 @@
 <!-- Content -->
 <!-- Workaround to display <h1> correctly in NPM lest it duplicate rendering. -->
 <!-- omit in toc -->
-# <sup><em>@armirage/</em></sup>grunt-remove-js-comments&nbsp;&nbsp;<a href="https://www.npmjs.com/package/@armirage/grunt-remove-js-comments" alt="npm package link"><img src="https://armirage.github.io/images/external-companies/npm/npm-logo/classic/npm-2009.svg" alt="npm logo" width="64"></a>&nbsp;&nbsp;<a href="https://github.com/armirage/grunt-remove-js-comments" alt="github repo link"><img src="https://armirage.github.io/images/external-companies/github/github-mark/GitHub-Mark-64px.png" alt="github logo" width="32"></a>
+# <sup><em>@armirage/</em></sup>grunt-remove-js-comments&nbsp;&nbsp;<a href="https://www.npmjs.com/package/@armirage/grunt-remove-js-comments" alt="npm package link" target="_blank"><img src="https://armirage.github.io/images/external-companies/npm/npm-logo/classic/npm-2009.svg" alt="npm logo" width="64"></a>&nbsp;&nbsp;<a href="https://github.com/armirage/grunt-remove-js-comments" alt="github repo link" target="_blank"><img src="https://armirage.github.io/images/external-companies/github/github-mark/GitHub-Mark-64px.png" alt="github logo" width="32"></a>
 
 [![GitHub tag (latest by date)](https://img.shields.io/github/v/release/armirage/grunt-remove-js-comments)](https://github.com/armirage/grunt-remove-js-comments/releases)
 [![GitHub issues](https://img.shields.io/github/issues/armirage/grunt-remove-js-comments)](https://github.com/armirage/grunt-remove-js-comments/issues/)
