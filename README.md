@@ -221,7 +221,7 @@ To remove header line comments, matching the following format, set to `true`.
 
 //=========
 
-//-+-+-+-+-
+//-+-+-+-+-+
 ```
 
 ### removeDoubleSlashes 
