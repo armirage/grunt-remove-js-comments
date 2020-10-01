@@ -243,7 +243,7 @@ Type: `Boolean`
 Default value: `false`
 
 > While grunt-remove-js-comments is intended towards and tested against JavaScript
-files. I have found it save to use for my whole project. I use it on HTML, CSS,
+files. I have found it safe to use for my whole project. I use it on HTML, CSS,
 XML, and other file types. The removals are CSS url safe.
 
 To remove HTML comments, matching the following format, set to `true`.
