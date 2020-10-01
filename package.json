@@ -1,0 +1,47 @@
+{
+  "name": "@armirage/grunt-remove-js-comments",
+  "version": "3.0.0",
+  "description": "Get finer control over the types of comments you remove from JavaScript files. Selectively remove JSDocs, Multiline, Single Line, Comment Anchors, Marked, and more. For everything else, use a Regular Expression (Regex).",
+  "keywords": [
+    "armirage",
+    "grunt",
+    "comments",
+    "javascript",
+    "remove comments"
+  ],
+  "homepage": "https://github.com/armirage/grunt-remove-js-comments#readme",
+  "author": {
+    "name": "Clint Mulligan",
+    "email": "clint.mulligan@armirage.com",
+    "url": "https://armirage.github.io/"
+  },
+  "license": "BSD-3-Clause",
+  "funding": [
+    {
+      "type": "Liberapay",
+      "url": "https://en.liberapay.com/armirage"
+    },
+    {
+      "type": "PayPal",
+      "url": "https://www.paypal.com/paypalme/armirage"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armirage/grunt-remove-js-comments.git"
+  },
+  "bugs": {
+    "url": "https://github.com/armirage/grunt-remove-js-comments/issues"
+  },
+  "main": "Gruntfile.js",
+  "scripts": {
+    "build:release": "mkdir release && cp -r src/. release && cp LICENSE.md release && cp README.md release && cp package.json release",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {
+    "@armirage/eslint-config-armirage": "^1.0.3",
+    "eslint": "^7.10.0"
+  }
+}

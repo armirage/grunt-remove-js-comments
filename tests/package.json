@@ -1,0 +1,16 @@
+{
+  "name": "test-plugin",
+  "version": "1.0.0",
+  "description": "test package to test release build",
+  "main": "index.js",
+  "scripts": {
+    "test:grunt": "grunt"
+  },
+  "author": "Clint Mulligan",
+  "license": "BSD-3-Clause",
+  "dependencies": {},
+  "devDependencies": {
+    "@armirage/grunt-remove-js-comments": "file:../release",
+    "grunt": "^1.3.0"
+  }
+}
