@@ -31,6 +31,7 @@
 [![Github code size](https://img.shields.io/github/languages/code-size/armirage/grunt-remove-js-comments)](https://github.com/armirage/grunt-remove-js-comments/releases)
 [![GitHub license](https://img.shields.io/github/license/armirage/grunt-remove-js-comments)](https://github.com/armirage/grunt-remove-js-comments/blob/master/LICENSE.md)
 [![armirage-style](https://img.shields.io/badge/code%20style-armirage-brightgreen)](https://github.com/armirage/grunt-remove-js-comments)
+[![liberapay-patrons](https://img.shields.io/liberapay/patrons/armirage.svg?logo=liberapay)](https://www.liberapay.com/armirage)
 
 > Part of many build processes is to remove comments from the source code. However, sometimes we only want to remove certain comments in steps towards a final result. This can be to generate different types of documentation along the way or only present certain types of comments to another department. To this effect, this plugin offers that kind of delineated selection.
 
@@ -290,6 +291,8 @@ Would remove all lines matching that pattern, such as the example below:
 Review the [Contributing Guidelines](https://github.com/armirage/.github/blob/master/CONTRIBUTING.md) for ways to make this repository better.
 
 Open Source Software (OSS) is only as strong as our Community.
+
+<a href="https://liberapay.com/armirage/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a> &nbsp; Thank you!
 
 ## Acknowledgements
 
