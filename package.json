@@ -1,6 +1,6 @@
 {
   "name": "@armirage/grunt-remove-js-comments",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Get finer control over the types of comments you remove from JavaScript files. Selectively remove JSDocs, Multiline, Single Line, Comment Anchors, Marked, and more. For everything else, use a Regular Expression (Regex).",
   "keywords": [
     "armirage",
