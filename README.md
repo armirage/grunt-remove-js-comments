@@ -43,7 +43,7 @@
 ## Table of Contents
 - [About](#about)
 - [Install](#install)
-	- [Prerequisites](#prerequisites)
+	- [Requires](#requires)
 - [Usage](#usage)
 - [Options](#options)
 	- [removeJSDocs](#removejsdocs)
@@ -70,7 +70,7 @@ This plugin allows you to select which comments (by syntax) to remove and which 
 
 ## Install
 
-### Prerequisites
+### Requires
 - ✅ [Grunt](https://gruntjs.com)
 
 To install Grunt and this plugin, run the following commands in the terminal:
