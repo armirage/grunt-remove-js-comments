@@ -283,7 +283,7 @@ Would remove all lines matching that pattern, such as the example below:
 
 ```
 
-* ::warning:: WARNING: This will remove anything matching the expression. It is not limited to comment lines. 
+* :warning: WARNING: This will remove anything matching the expression. It is not limited to comment lines. 
 
 ## How to Contribute
 
