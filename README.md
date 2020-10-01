@@ -287,15 +287,15 @@ Would remove all lines matching that pattern, such as the example below:
 
 ## How to Contribute
 
-We need more modular rulesets. The base eslint ruleset is ECMAScript 2020. It should be easy to add other modular configs to the package to account for more environments.
-
 Review the [Contributing Guidelines](https://github.com/armirage/.github/blob/master/CONTRIBUTING.md) for ways to make this repository better.
 
 Open Source Software (OSS) is only as strong as our Community.
 
 ## Acknowledgements
 
-ESLint for their exhaustive efforts to keep pace with the ECMAScript yearly cycle. 
+Grunt is easy and extensible. Integrates well into production Continuos Integration (CI) processes. Cheers to them!
+
+Inspired by [echoloyuk](https://github.com/echoloyuk)'s original code for grunt-remove-comments.
 
 ## Contact
 
