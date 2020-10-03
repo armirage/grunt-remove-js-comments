@@ -16,8 +16,8 @@
 		<small>"Sticky Note Lot" by Min An, licensed under Pexels.</small>
 		<sup>
 			<a href="#banner-note">[1]</a>
-		<sup>
-	</sup></sup></div>
+		</sup>
+	</div>
 </div>
 
 &nbsp;
