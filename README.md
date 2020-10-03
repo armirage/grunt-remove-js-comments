@@ -33,7 +33,7 @@
 [![armirage-style](https://img.shields.io/badge/code%20style-armirage-brightgreen)](https://github.com/armirage/grunt-remove-js-comments)
 [![liberapay-patrons](https://img.shields.io/liberapay/patrons/armirage.svg?logo=liberapay)](https://www.liberapay.com/armirage)
 
-> Part of many build processes is to remove comments from the source code. However, sometimes we only want to remove certain comments in steps towards a final result. This can be to generate different types of documentation along the way or only present certain types of comments to another department. To this effect, this plugin offers that kind of delineated selection.
+> Sometimes we only want to remove certain comments. Select to what types of comments to remove. Choose between JSDocs, Multiline, Single line, Header lines, Comment Anchors, HTML type comments, and the capability of removing what matches a RegEx pattern.. This plugin offers that kind of delineated selection.
 
 &nbsp;
 <div align="center">
