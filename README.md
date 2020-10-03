@@ -37,7 +37,7 @@
 
 &nbsp;
 <div align="center">
-	<img src="./docs/images/example-removal.gif" alt="Screen recording showing inconsistent code being linted into the Armirage style." width="730px">
+	<img src="https://raw.githubusercontent.com/armirage/grunt-remove-js-comments/master/docs/images/example-removal.gif" alt="Screen recording showing inconsistent code being linted into the Armirage style." width="730px">
 </div>
 
 <!-- omit in toc -->
