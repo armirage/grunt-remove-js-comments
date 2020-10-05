@@ -1,4 +1,5 @@
 <!-- armirage .github README.md -->
+
 [:earth_americas: :speech_balloon: English](https://github.com/armirage/grunt-remove-js-comments/blob/master/docs/l10n/index.md)\
 [Table of Contents](#table-of-contents)
 
@@ -21,9 +22,11 @@
 </div>
 
 &nbsp;
+
 <!-- Content -->
 <!-- Workaround to display <h1> correctly in NPM lest it duplicate rendering. -->
 <!-- omit in toc -->
+
 # <sup><em>@armirage/</em></sup>grunt-remove-js-comments&nbsp;&nbsp;<a href="https://www.npmjs.com/package/@armirage/grunt-remove-js-comments" alt="npm package link" target="_blank"><img src="https://armirage.github.io/images/external-companies/npm/npm-logo/classic/npm-2009.svg" alt="npm logo" width="64"></a>&nbsp;&nbsp;<a href="https://github.com/armirage/grunt-remove-js-comments" alt="github repo link" target="_blank"><img src="https://armirage.github.io/images/external-companies/github/github-mark/GitHub-Mark-64px.png" alt="github logo" width="32"></a>
 
 [![GitHub tag (latest by date)](https://img.shields.io/github/v/release/armirage/grunt-remove-js-comments)](https://github.com/armirage/grunt-remove-js-comments/releases)
@@ -33,28 +36,33 @@
 [![armirage-style](https://img.shields.io/badge/code%20style-armirage-brightgreen)](https://github.com/armirage/grunt-remove-js-comments)
 [![liberapay-patrons](https://img.shields.io/liberapay/patrons/armirage.svg?logo=liberapay)](https://www.liberapay.com/armirage)
 
+> Hey! this doc is also available in [Portuguese](./docs/pt-br/README.md)!
+
 > Choose between JSDocs, Multiline, Single line, Header lines, Comment Anchors, Marked comments, HTML type comments, or remove according to a RegEx pattern. This plugin offers that kind of delineated selection.
 
 &nbsp;
+
 <div align="center">
 	<img src="https://raw.githubusercontent.com/armirage/grunt-remove-js-comments/master/docs/images/example-removal.gif" alt="Screen recording showing inconsistent code being linted into the Armirage style." width="730px">
 </div>
 
 <!-- omit in toc -->
+
 ## Table of Contents
+
 - [About](#about)
 - [Install](#install)
-	- [Requires](#requires)
+  - [Requires](#requires)
 - [Usage](#usage)
 - [Options](#options)
-	- [removeJSDocs](#removejsdocs)
-	- [removeMultilines](#removemultilines)
-	- [removeAnchors](#removeanchors)
-	- [removeSpecials](#removespecials)
-	- [removeHeaderLines](#removeheaderlines)
-	- [removeDoubleSlashes](#removedoubleslashes)
-	- [removeHTMLStyle](#removehtmlstyle)
-	- [removeRegex](#removeregex)
+  - [removeJSDocs](#removejsdocs)
+  - [removeMultilines](#removemultilines)
+  - [removeAnchors](#removeanchors)
+  - [removeSpecials](#removespecials)
+  - [removeHeaderLines](#removeheaderlines)
+  - [removeDoubleSlashes](#removedoubleslashes)
+  - [removeHTMLStyle](#removehtmlstyle)
+  - [removeRegex](#removeregex)
 - [How to Contribute](#how-to-contribute)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
@@ -72,6 +80,7 @@ This plugin allows you to select which comments (by syntax) to remove and which 
 ## Install
 
 ### Requires
+
 - ✅ [Grunt](https://gruntjs.com)
 
 To install Grunt and this plugin, run the following commands in the terminal:
@@ -79,7 +88,8 @@ To install Grunt and this plugin, run the following commands in the terminal:
 ```console
 npm install grunt @armirage/grunt-remove-js-comments --save-dev
 ```
-* :pencil: NOTE: The plugin is a scoped npm package and will need to be referenced that way.
+
+- :pencil: NOTE: The plugin is a scoped npm package and will need to be referenced that way.
 
 This will save both as developer dependencies. Most likely this is for development and unnecessary in production builds.
 
@@ -88,7 +98,8 @@ While in the terminal, create the configuration file `Gruntfile.js`
 ```console
 touch Gruntfile.js
 ```
-* :pencil: NOTE: The capital "G".
+
+- :pencil: NOTE: The capital "G".
 
 To complete installation See [Usage](#usage).
 
@@ -97,51 +108,52 @@ To complete installation See [Usage](#usage).
 Once the grunt-remove-js-comments package is installed, you can configure the tasks to run in `Gruntfile.js`.
 
 // Gruntfile.js
+
 ```javascript
-module.exports = function( grunt ) {
+module.exports = function (grunt) {
+  grunt.initConfig({
+    "remove-js-comments": {
+      dev: {
+        options: {
+          removeJSDocs: true,
+          removeMultilines: true,
+          removeAnchors: true,
+          removeSpecials: false,
+          removeHeaderLines: true,
+          removeDoubleSlashes: true,
+          removeHTMLStyle: true,
+          removeRegex: "",
+        },
+        src: "index.js",
+        dest: "output.js",
+        expand: false,
+      },
+    },
 
-	grunt.initConfig({
-		"remove-js-comments": {
-			dev: {
-				options: {
-					removeJSDocs: true,
-					removeMultilines: true,
-					removeAnchors: true,
-					removeSpecials: false,
-					removeHeaderLines: true,
-					removeDoubleSlashes: true,
-					removeHTMLStyle: true,
-					removeRegex: ""
-				},
-				src: "index.js",
-				dest: "output.js",
-				expand: false
-			}
-		},
+    pkg: grunt.file.readJSON("package.json"),
+  });
 
-		pkg: grunt.file.readJSON( "package.json" )
-	});
+  grunt.loadNpmTasks("@armirage/grunt-remove-js-comments");
 
-	grunt.loadNpmTasks( "@armirage/grunt-remove-js-comments" );
-
-	grunt.registerTask( "default", [ "remove-js-comments" ]);
+  grunt.registerTask("default", ["remove-js-comments"]);
 };
 ```
-* :pencil: NOTE: The plugin is a scoped npm package and will need to be referenced that way.
+
+- :pencil: NOTE: The plugin is a scoped npm package and will need to be referenced that way.
 
 ## Options
 
-For information on passing options in a `Gruntfile.js` refer to [Grunt's documentation: "Configuring Tasks"](https://gruntjs.com/configuring-tasks). 
+For information on passing options in a `Gruntfile.js` refer to [Grunt's documentation: "Configuring Tasks"](https://gruntjs.com/configuring-tasks).
 
-*\* Any Option not listed in the Gruntfile.js will use its default value.*
+_\* Any Option not listed in the Gruntfile.js will use its default value._
 
-### removeJSDocs 
+### removeJSDocs
 
 Type: `Boolean`
 Default value: `false`
 
 > JSDoc <sup id="anchor-3">[3](#jsdocs-note)</sup> is an API documentation generator for JavaScript, similar to Javadoc or phpDocumentor.
-> 
+>
 > You add documentation comments directly to your source code, right alongside the code itself. The JSDoc tool will scan your source code and generate an HTML documentation website for you.
 >
 > To learn more about JSDoc API Generation, visit the [JSDoc Website](https://jsdoc.app/about-getting-started.html).
@@ -156,7 +168,7 @@ To remove JSDocs comments, matching the following format, set to `true`.
  */
 ```
 
-### removeMultilines 
+### removeMultilines
 
 Type: `Boolean`
 Default value: `false`
@@ -171,18 +183,18 @@ To remove multiline comments, matching the following format, set to `true`.
  */
 ```
 
-* :pencil: NOTE: Set to `true` does not remove JSDocs, even though they are a type of multiline comment.
+- :pencil: NOTE: Set to `true` does not remove JSDocs, even though they are a type of multiline comment.
 
-### removeAnchors 
+### removeAnchors
 
 Type: `Boolean`
 Default value: `false`
 
-> Comment Anchors <sup id="anchor-4">[4](#comment-anchors-note)</sup> is a VS Code <sup id="anchor-5">[5](#vs-code-note)</sup> extension. 
+> Comment Anchors <sup id="anchor-4">[4](#comment-anchors-note)</sup> is a VS Code <sup id="anchor-5">[5](#vs-code-note)</sup> extension.
 >
 > Visually impaired programmers may have a challenge navigating the code base. Techniques such as indentation, line breaks, color coding of language keywords (such as IF-THEN), are all visual cues programmers use to scan and navigate to blocks of code. Signals that often are not communicated through assistive devices.
 >
-> Comment Anchors scans and treats certain comments as hyperlinks in the code. Providing a textual navigation menu with links to code blocks. 
+> Comment Anchors scans and treats certain comments as hyperlinks in the code. Providing a textual navigation menu with links to code blocks.
 >
 > To get Comment Anchors, download [Comment Anchors from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ExodiusStudios.comment-anchors)
 
@@ -196,7 +208,7 @@ To remove Comment Anchors comments, matching the following format, set to `true`
 // TODO One more thing etc..
 ```
 
-### removeSpecials 
+### removeSpecials
 
 Type: `Boolean`
 Default value: `false`
@@ -206,11 +218,12 @@ To remove special comments, matching the following format, set to `true`.
 ```javascript
 /*! Author: Nathaniel Hawthorne !*\
 
-/*# Let's not lose this. 
+/*# Let's not lose this.
 ```
-* :pencil: NOTE: Many libraries put attribution info in these types comments. If you do not completely own all of the code, consider leaving this option default for attribution and copyright purposes.
 
-### removeHeaderLines 
+- :pencil: NOTE: Many libraries put attribution info in these types comments. If you do not completely own all of the code, consider leaving this option default for attribution and copyright purposes.
+
+### removeHeaderLines
 
 Type: `Boolean`
 Default value: `false`
@@ -225,7 +238,7 @@ To remove header line comments, matching the following format, set to `true`.
 //-+-+-+-+-+
 ```
 
-### removeDoubleSlashes 
+### removeDoubleSlashes
 
 Type: `Boolean`
 Default value: `false`
@@ -236,16 +249,16 @@ To remove double slash comments, matching the following format, set to `true`.
 // only one line, can not go any further.
 ```
 
-* :pencil: NOTE: Set to `true` does not remove Comment Anchors, specials, or header lines, even though they are a type of single line, double slash comment.
+- :pencil: NOTE: Set to `true` does not remove Comment Anchors, specials, or header lines, even though they are a type of single line, double slash comment.
 
-### removeHTMLStyle 
+### removeHTMLStyle
 
 Type: `Boolean`
 Default value: `false`
 
 > While grunt-remove-js-comments is intended towards and tested against JavaScript
-files. I have found it safe to use for my whole project. I use it on HTML, CSS,
-XML, and other file types. The removals are CSS url safe.
+> files. I have found it safe to use for my whole project. I use it on HTML, CSS,
+> XML, and other file types. The removals are CSS url safe.
 
 To remove HTML comments, matching the following format, set to `true`.
 
@@ -253,13 +266,13 @@ To remove HTML comments, matching the following format, set to `true`.
 <!-- comment be in here -->
 ```
 
-### removeRegex 
+### removeRegex
 
 Type: `string`
 Default value: ""
 
 > "Regex" colloquially refers to RegExp or Regular Expressions. A regular expression is an object that describes a pattern of characters.
-> 
+>
 > Regular expressions are used to perform pattern-matching and "search-and-replace" functions on text.
 >
 > To learn more about JavaScript Regular Expression, refer to the [W3C Schools website](https://www.w3schools.com/jsref/jsref_obj_regexp.asp).
@@ -268,6 +281,7 @@ To remove code matching a Regular Expression, set this option to a "regex" strin
 
 Example "Setting the removeRegex Option":
 // Gruntfile.js excerpt
+
 ```javascript
 ...
 options: {
@@ -279,12 +293,10 @@ options: {
 Would remove all lines matching that pattern, such as the example below:
 
 ```javascript
-
 // 2015-12-22T17:44:24Z
-
 ```
 
-* :warning: WARNING: This will remove anything matching the expression. It is not limited to comment lines. 
+- :warning: WARNING: This will remove anything matching the expression. It is not limited to comment lines.
 
 ## How to Contribute
 
@@ -304,7 +316,7 @@ Inspired by [echoloyuk](https://github.com/echoloyuk)'s original code for grunt-
 
 Armirage Github repositories and @armirage scoped NPM modules are maintained by [Armirage](https://www.armirage.com), A Technology Solutions company, feel free to <a href="mailto:helloyall@armirage.com">contact us</a>!
 
-## Release History 
+## Release History
 
 - 2020-09-30 Breaking change reversed Logic to explicitly remove things. Update to Armirage style.
 - 2020-09-18 Breaking change JSdocs to JSDoc, and added Regex Expressions.
