@@ -1,6 +1,6 @@
 <!-- armirage .github README.md -->
 
-[:earth_americas: :speech_balloon: English](https://github.com/armirage/grunt-remove-js-comments/blob/master/docs/l10n/index.md)\
+[:earth_americas: :speech_balloon: Portuguese](https://github.com/armirage/grunt-remove-js-comments/blob/master/docs/l10n/index.md\
 [Table of Contents](#table-of-contents)
 
 <!-- Armirage OSS Header -->
@@ -308,6 +308,9 @@ Open Source Software (OSS) é tão forte quanto sua comunidade.
 Grunt é fácil e extensivel. Ele interage bem com com processos de Integraçao Contínua (CI). Meus agradecimentos!
 
 Inspirado pelo codigo original do grunt-remove-comments feito por [echoloyuk](https://github.com/echoloyuk).
+
+
+Onrigado a [BeatrizHerculano](https://github.com/BeatrizHerculano) ![BeatrizHerculano](https://avatars1.githubusercontent.com/u/15809077?s=50) por traduzir o [README para Português.](https://github.com/armirage/grunt-remove-js-comments/blob/master/docs/l10n/README.pt.md)
 
 ## Contato
 

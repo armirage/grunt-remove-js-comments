@@ -1,6 +1,9 @@
 <!-- armirage .github README.md -->
 
 [:earth_americas: :speech_balloon: English](https://github.com/armirage/grunt-remove-js-comments/blob/master/docs/l10n/index.md)\
+
+[:earth_americas: :speech_balloon: Portuguese](https://github.com/armirage/grunt-remove-js-comments/blob/master/docs/l10n/index.md)\
+
 [Table of Contents](#table-of-contents)
 
 <!-- Armirage OSS Header -->
@@ -35,8 +38,6 @@
 [![GitHub license](https://img.shields.io/github/license/armirage/grunt-remove-js-comments)](https://github.com/armirage/grunt-remove-js-comments/blob/master/LICENSE.md)
 [![armirage-style](https://img.shields.io/badge/code%20style-armirage-brightgreen)](https://github.com/armirage/grunt-remove-js-comments)
 [![liberapay-patrons](https://img.shields.io/liberapay/patrons/armirage.svg?logo=liberapay)](https://www.liberapay.com/armirage)
-
-> Hey! this doc is also available in [Portuguese](./docs/pt-br/README.md)!
 
 > Choose between JSDocs, Multiline, Single line, Header lines, Comment Anchors, Marked comments, HTML type comments, or remove according to a RegEx pattern. This plugin offers that kind of delineated selection.
 
@@ -311,6 +312,8 @@ Open Source Software (OSS) is only as strong as our Community.
 Grunt is easy and extensible. Integrates well into production Continuos Integration (CI) processes. Cheers to them!
 
 Inspired by [echoloyuk](https://github.com/echoloyuk)'s original code for grunt-remove-comments.
+
+Thank you to [BeatrizHerculano](https://github.com/BeatrizHerculano) ![BeatrizHerculano](https://avatars1.githubusercontent.com/u/15809077?s=50) for translating this [README into Portuguese.](https://github.com/armirage/grunt-remove-js-comments/blob/master/docs/l10n/README.pt.md)
 
 ## Contact
 

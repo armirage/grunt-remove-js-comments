@@ -15,3 +15,4 @@
 ## Available Languages
 
 [English](../../README.md)
+[Potuguese](./README.pt.md)
