@@ -1,7 +1,7 @@
 <!-- armirage .github README.md -->
 
 [:earth_americas: :speech_balloon: Portuguese](https://github.com/armirage/grunt-remove-js-comments/blob/master/docs/l10n/index.md)\
-[Índice](#table-of-contents)
+[Índice](#índice)
 
 <!-- Armirage OSS Header -->
 <div align="right">
@@ -46,7 +46,7 @@
 
 <!-- omit in toc -->
 
-## Sumário
+## Índice
 
 - [Sobre](#sobre)
 - [Instalar](#instalar)
