@@ -2,8 +2,6 @@
 
 [:earth_americas: :speech_balloon: English](https://github.com/armirage/grunt-remove-js-comments/blob/master/docs/l10n/index.md)\
 
-[:earth_americas: :speech_balloon: Portuguese](https://github.com/armirage/grunt-remove-js-comments/blob/master/docs/l10n/index.md)\
-
 [Table of Contents](#table-of-contents)
 
 <!-- Armirage OSS Header -->
