@@ -14,5 +14,5 @@
 
 ## Available Languages
 
-[English](../../README.md)
+[English](../../README.md)\
 [Potuguese](./README.pt.md)
