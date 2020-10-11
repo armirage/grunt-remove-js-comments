@@ -69,7 +69,7 @@
 
 ## Sobre
 
-Grunt é um executador de tasks em Javascript. Ele facilita a automação de processos. Eles tem tipos diferentes de plugin para tipos diferentes de tasks. Se um plugin não existe é facil e rápido e construir um personalizado.
+Grunt <sup id="anchor-2">[2](#grunt-note)</sup> é um executador de tasks em Javascript. Ele facilita a automação de processos. Eles tem tipos diferentes de plugin para tipos diferentes de tasks. Se um plugin não existe é facil e rápido e construir um personalizado.
 
 Se voce é novo no grunt, da uma olhada no guia de ["Getting Started"](http://gruntjs.com/getting-started). Esse guia explica em detalhes como instalar Grunt, usar plugins e criar um `Gruntfile.js`.
 
